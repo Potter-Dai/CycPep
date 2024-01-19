@@ -83,7 +83,7 @@ for i, pdbid in enumerate(pdbids):
     density = [i for j, i in enumerate(density) if j not in index]
     yhalo = [i for i in yhalo if i != -1]
     unique, counts = np.unique(yhalo, return_counts=True)
-    Top10_cluster_size_nhalo = [counts[i] for i in np.argsort(counts)[-10:]]  # 从小到大排序
+    Top10_cluster_size_nhalo = [counts[i] for i in np.argsort(counts)[-10:]] 
 
     dict_nhalo = dict(zip(unique, counts))
     Top10_cluster_label_nhalo = []

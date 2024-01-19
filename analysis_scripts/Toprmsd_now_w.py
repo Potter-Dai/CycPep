@@ -27,7 +27,7 @@ for i, pdbid in enumerate(pdbids):
     yhalo = [i for i in yhalo if i != -1]
     unique1, counts1 = np.unique(yhalo, return_counts=True)
 
-    Top10_cluster_size_nhalo = [counts1[i] for i in np.argsort(counts1)[-10:]]  # 从小到大排序
+    Top10_cluster_size_nhalo = [counts1[i] for i in np.argsort(counts1)[-10:]]
 
     dict_nhalo = dict(zip(unique1, counts1))
     Top10_cluster_label_nhalo = []
