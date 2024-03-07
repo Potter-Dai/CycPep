@@ -2,7 +2,7 @@ import numpy as np
 import pytraj as pt
 
 
-class GetDistMatrix:
+class getdistmat:
     def __init__(self, traj, top):
         self.traj = pt.load(traj, top)
         self.top =  self.traj.topology
@@ -64,5 +64,5 @@ class GetDistMatrix:
 
 '''
 useage:
-get_distance_matrix = GetDistMatrix('traj.nc', 'amberparm.prmtop')
+get_distance_matrix = getdistmat('traj.nc', 'amberparm.prmtop')
 '''
